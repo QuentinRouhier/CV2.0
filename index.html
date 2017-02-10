@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>cv3.0</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+    $("#menu1").click(function(){
+      $(".target").fadeIn( 'slow');
+      $(".target2").hide();
+      $(".target3").hide();
+      $(".target4").hide();
+    });
+
+    $("#menu2").click(function(){
+      $(".target").hide();
+      $(".target2").fadeIn( 'slow');
+      $(".target3").hide();
+      $(".target4").hide();
+    });
+
+    $("#menu3").click(function(){
+      $(".target3").fadeIn( 'slow');
+      $(".target2").hide();
+      $(".target").hide();
+      $(".target4").hide();
+    });
+
+    $("#menu4").click(function(){
+      $(".target4").hide();
+      $(".target2").fadeIn( 'slow');
+      $(".target3").hide();
+      $(".target").hide();
+    });
+
+  });
+  </script>
+  <script src="progressbar.js"></script>
+  <script src="multipleProgressBar.js" type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <div id="grandediv">
+      <ul>
+        <div class="menu">
+          <button id = "menu1"> Compétences </button>
+          <button id = "menu2"> Diplomes </button>
+          <button id = "menu3"> Formations </button>
+          <button id = "menu4"> Loisirs </button>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <div id="toto">
+    <ul>
+      <div class="menu">
+        <div class="menu1">
+          <li><img src="img/info.png"/> Civilité
+          </li>
+        </div>
+        <div class="menu2">
+          <li>
+            <p> Nom: Rouhier
+              <br/>
+              Prenom: Quentin
+              <br/>
+              <br/>
+              Ville: Orviller-sorel
+              <br/>
+              Adresse: 2 bis rue de flandre
+              <br/>
+              Postale: 60490
+            </p>
+          </div>
+        </li>
+      </div>
+    </ul>
+    <ul>
+      <div class="menu">
+        <div class="menu1">
+          <li><img src="img/enveloppe.png"/> Me contacter
+          </li>
+        </div>
+        <div class="menu2">
+          <li>
+            <p><a href="mailto:Quentin.Rouhier@gmail.com">E-mail: Quentin.Rouhier@gmail.com </a>
+              <br/>
+              Telephone: 06 67 95 66 57
+              <br/>
+              <br/>
+              <a href="https://www.linkedin.com/in/quentin-rouhier-6b5458138?trk=nav_responsive_tab_profile"target="self"><img src="img/linkedin.png"/></a>
+            </p>
+          </li>
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="menu">
+        <div class="menu1">
+          <li><img src="img/vignette.jpg"/> Situation professionnelle
+          </li>
+        </div>
+        <div class="menu2">
+          <li>
+            <p>
+              En cours de formation
+            </p>
+          </li>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div id="targetAll">
+    <div class="target">
+      <h2>Compétences</h2>
+      <p>Ligne de commande sous linux:<span class="progressBar" id="progress0" value="5"></span></p>
+      <p>Nano:<span class="progressBar" id="progress1" value="5"></span></p>
+      <p>Git/github:<span class="progressBar" id="progress2" value="5"></span></p>
+      <p>Html:<span class="progressBar" id="progress3" value="15"></span></p>
+      <p>Css:<span class="progressBar" id="progress4" value="12"></span></p>
+      <p>Atom<span class="progressBar" id="progress5" value="17"></span></p>
+      <p>Php:<span class="progressBar" id="progress6" value="7"></span></p>
+      <p>Vhost:<span class="progressBar" id="progress7" value="6"></span></p>
+      <p>Apache:<span class="progressBar" id="progress8" value="6"></span></p>
+      <p>Gimp:<span class="progressBar" id="progress9" value="14"></span></p>
+    </div>
+    <div class="target2">
+      <p>Bac Stmg sig mention AB
+      </p>
+      <p>Brevet des colleges
+      </p>
+    </div>
+    <div class="target3">
+      <p>Ecole du numérique du noyonnais
+      </p>
+    </div>
+    <div class="target4">
+      <p>v,kdsl,vxlwm
+      </p>
+    </div>
+  </div>
+</body>
+</html>
